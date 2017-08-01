@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<center>
+<% @memes.each do |meme| %>
+
+<div class="image-box">
+    <h3><%= meme.title %> posted by <%= meme.poster %></h3>
+    <%= image_tag meme.image, class: "image" %><br>
+    <%= link_to 'Show', meme %>
+   <%= link_to 'Edit', edit_meme_path(meme) %>
+   <%= link_to 'Destroy', meme, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+ 
+<% end %>
+</center>
+
+<%= link_to 'New Meme', new_meme_path %>
+

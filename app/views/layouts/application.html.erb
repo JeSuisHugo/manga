@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MangaUniverWorld</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Mannga Univer World</h1>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Mangas</li>
+                <li>Post New Manga</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    
+    <%= yield %>
+  </body>
+</html>
