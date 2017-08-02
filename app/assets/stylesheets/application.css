@@ -17,7 +17,7 @@ body {
     font-family: 'Merriweather';
     background-color: #000;
     color: yellow;
-    background-image: url('http://www.fg-a.com/wallpapers/geo-shapes-black-1280b.jpg');
+    background-image: image-url('http://www.fg-a.com/wallpapers/geo-shapes-black-1280b.jpg');
     background-size: cover;
 }
 h1 {
